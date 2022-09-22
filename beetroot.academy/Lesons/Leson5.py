@@ -1,4 +1,4 @@
-# from datetime import datetime
+from datetime import datetime
 # date = datetime(year=2022, month=9, day=21, hour=19, minute=9, second=55)
 # print(date)
 # print(type(date))
@@ -7,11 +7,13 @@
 # print(datetime.now()) # поточна дата/час
 # print(datetime.today())
 # print(date.isoformat()) #почитати
-#
-# td = '20.09.2022'
+# #
+td = '18.04.1985'
+print(type(td))
 # d = datetime.strptime(td, '%d.%m.%Y')
 # print(d)
 # print(type(d))
+# print(2023-d.year)
 # print(d.year, d.month, d.day)
 #
 # other = d.replace(month=4, day=1)
@@ -84,35 +86,35 @@
 # print(math.isclose(0.1 + 0.2, 0.3)) # порівняти
 
 # підрахувати парність скобок ()
-text = '((()))()){{{}}}[]'
-count1 = 0  # (
-count2 = 0  # [
-count3 = 0  # {
-for item in text:
-    if item == '(':
-        count1 += 1
-    elif item in text:
-        item == '['
-    elif item in text:
-        item == '{'
-        count3 += 1
-    elif item == ')':
-        count1 += 1
-    elif item == ']':
-        count2 += 1
-    elif item == '}':
-        count3 += 1
-
-if count1 == 0:
-    print(f"Bracket '()': {True}")
-else:
-    print(f'Bracket "()": {False}')
-if count2 == 0:
-    print(f'Bracket "[]": {True}')
-else:
-    print(f'Bracket "[]": {False}')
-if count3 == 0:
-    print('Bracket {}', True)
-else:
-    print('Bracket {}', False)
+# text = '((()))()){{{}}}[]'
+# count1 = 0  # (
+# count2 = 0  # [
+# count3 = 0  # {
+# for item in text:
+#     if item == '(':
+#         count1 += 1
+#     elif item in text:
+#         item == '['
+#     elif item in text:
+#         item == '{'
+#         count3 += 1
+#     elif item == ')':
+#         count1 += 1
+#     elif item == ']':
+#         count2 += 1
+#     elif item == '}':
+#         count3 += 1
+#
+# if count1 == 0:
+#     print(f"Bracket '()': {True}")
+# else:
+#     print(f'Bracket "()": {False}')
+# if count2 == 0:
+#     print(f'Bracket "[]": {True}')
+# else:
+#     print(f'Bracket "[]": {False}')
+# if count3 == 0:
+#     print('Bracket {}', True)
+# else:
+#     print('Bracket {}', False)
 
