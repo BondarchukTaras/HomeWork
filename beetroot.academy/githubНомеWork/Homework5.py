@@ -37,8 +37,8 @@ import random
 
 # Task 3
 
-def WithoutRepeat(length):
+def without_repeat(length):
     letters = input()
     for i in range(len(letters)):
         print("Randomly generated string is: ", ''.join((random.sample(letters, length))))
-WithoutRepeat(5)
+without_repeat(5)
