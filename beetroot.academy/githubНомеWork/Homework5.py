@@ -1,12 +1,12 @@
 from datetime import datetime
 import random
 
+
 # Task 1
-# import random
-#
+
 # print('Try to guess the number from 1 to 10')
 # numeric = int(input())
-# a = random.randint(1, 2)  # випадкове число в діапазоні 1-10
+# a = random.randint(1, 10)  # випадкове число в діапазоні 1-10
 # print(a)
 # if numeric == a:
 #     print("You guessed it")
@@ -38,11 +38,7 @@ import random
 # Task 3
 
 def WithoutRepeat(length):
-    letters = 'hello'
-    result = ''.join((random.sample(letters, length)))
-    print("Randomly generated string is: ", result)
-WithoutRepeat(5) # define the length
-WithoutRepeat(5)
-WithoutRepeat(5)
-WithoutRepeat(5)
+    letters = input()
+    for i in range(len(letters)):
+        print("Randomly generated string is: ", ''.join((random.sample(letters, length))))
 WithoutRepeat(5)
