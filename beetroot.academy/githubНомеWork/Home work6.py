@@ -16,7 +16,7 @@ from itertools import groupby
 # a = []
 # b = []
 # i = 0
-# range(10) # кількість ітерацій
+# range(10)
 # while i < 10:
 #     i = i + 1
 #     x = random.randint(1, 10)  # генерація випадкового числа від 1 до 10
@@ -28,12 +28,13 @@ from itertools import groupby
 # print(list(set(a + b)))  # створення та третього списко з першого та другого без дублів
 
 # Task 3
-a = []
+a = list(range(1,101))
+b=[]
+print(a)
 i = 0
-range(100) # кількість ітерацій
+range(101)
 while i < 100:
     i = i + 1
     if (i % 7 == 0) and not (i % 5 == 0): # числа, які діляться на 7, але не кратні 5,
-        a.append(str(i))
-print('  '.join(a))
-
+        b.append(str(i))
+print('  '.join(b))
