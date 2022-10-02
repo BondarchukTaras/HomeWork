@@ -99,17 +99,56 @@
 #
 # print((to_seconds(minutes=50, days=1)))
 
-import  random
-number =['i', 'j']
-print(number)
-i = random.randint(1,10)
-j = i * i
-print(i)
-print(j)
-# del number[0]
-number.append(0, i)
-# del number [0]
-number.append(0, j)
-print(list.number)
+# def car(model, color):
+#     print('My car is a ' + model + ' ' + color)
+# car('Volvo', 'red') # позиційні
+# car( model='Volvo', color= 'red') # іменовані
+
+# def incremet_values(l):
+#     for i in range(len(l)):
+#         l[i] +=1
+#     print("List inside of function: " + str(l))
+# original =[ 1, 2,3]
+# incremet_values(original)
+# print("List uotside of function: " + str(original))
+
+# def incremet_values(l):
+#     l = [4, 5, 6]
+#     print("List inside of function: " + str(l))
+#
+# original = [1, 2, 3]
+# incremet_values(original)
+# print("List uotside of function: " + str(original))
+
+# def sum_of_s(*args):
+#     return_value = 0
+#     for num in args:
+#        return_value += num**2
+#     return return_value
+#
+# print(sum_of_s(2, 3, 3, 5, 1, 6))
+
+# def build_pet(spesies, name, **pet_info):  # dict
+#     pet = {}
+#     pet['spesies'] = spesies #
+#     pet['name'] = name
+#     for key, value in pet_info.items():
+#         pet[key] = value
+#     return pet
+#
+#
+# my_pet = build_pet('Husky', 'Doge', color='White', age=2)
+# print(my_pet)
 
 
+# Tree of size
+def print_tree(n):
+    for i in range(n):
+        for j in range(n - i):
+            print(" ", end="")
+        for k in range(2 * i + 1):
+            print('*', end='')
+        print()
+
+
+print_tree(10)
